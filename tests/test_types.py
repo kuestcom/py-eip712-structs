@@ -1,7 +1,7 @@
 import pytest
 
-from poly_eip712_structs import Address, Array, Boolean, Bytes, Int, String, Uint, EIP712Struct
-from poly_eip712_structs.types import from_solidity_type
+from kuest_eip712_structs import Address, Array, Boolean, Bytes, Int, String, Uint, EIP712Struct
+from kuest_eip712_structs.types import from_solidity_type
 
 
 def test_bytes_validation():

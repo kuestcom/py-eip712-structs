@@ -5,7 +5,7 @@ import string
 from eth_utils import keccak
 import pytest
 
-from poly_eip712_structs import Address, Array, Boolean, Bytes, Int, String, Uint, EIP712Struct, make_domain
+from kuest_eip712_structs import Address, Array, Boolean, Bytes, Int, String, Uint, EIP712Struct, make_domain
 
 
 def signed_min_max(bits):

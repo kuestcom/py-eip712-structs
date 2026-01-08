@@ -1,4 +1,4 @@
-# EIP-712 Structs  [![Build Status](https://travis-ci.org/ConsenSys/py-eip712-structs.svg?branch=master)](https://travis-ci.org/ConsenSys/py-eip712-structs) [![Coverage Status](https://coveralls.io/repos/github/ConsenSys/py-eip712-structs/badge.svg?branch=master)](https://coveralls.io/github/ConsenSys/py-eip712-structs?branch=master)
+# EIP-712 Structs  [![Build Status](https://travis-ci.org/ConsenSys/py-kuest-eip712-structs.svg?branch=master)](https://travis-ci.org/ConsenSys/py-kuest-eip712-structs) [![Coverage Status](https://coveralls.io/repos/github/ConsenSys/py-kuest-eip712-structs/badge.svg?branch=master)](https://coveralls.io/github/ConsenSys/py-kuest-eip712-structs?branch=master)
 
 A python interface for simple EIP-712 struct construction.
 
@@ -14,7 +14,7 @@ https://github.com/ethereum/EIPs/blob/master/EIPS/eip-712.md
 
 ## Install
 ```bash
-pip install eip712-structs
+pip install kuest-eip712-structs
 ```
 
 ## Usage
@@ -34,11 +34,11 @@ struct MyStruct {
 With this module, that would look like:
 ```python
 # Make a unique domain
-from eip712_structs import make_domain
+from kuest_eip712_structs import make_domain
 domain = make_domain(name='Some name', version='1.0.0')  # Make a Domain Separator
 
 # Define your struct type
-from eip712_structs import EIP712Struct, String, Uint
+from kuest_eip712_structs import EIP712Struct, String, Uint
 class MyStruct(EIP712Struct):
     some_string = String()
     some_number = Uint(256)
@@ -69,7 +69,7 @@ Attributes may be added dynamically as well. This may be necessary if you
 want to use a reserved keyword like `from`.
 
 ```python
-from eip712_structs import EIP712Struct, Address
+from kuest_eip712_structs import EIP712Struct, Address
 class Message(EIP712Struct):
     pass
 
@@ -95,12 +95,12 @@ Constantly providing the same domain can be cumbersome. You can optionally set a
 It is automatically used by `.to_message()` and `.signable_bytes()`
 
 ```python
-import eip712_structs
+import kuest_eip712_structs
 
 foo = SomeStruct()
 
-my_domain = eip712_structs.make_domain(name='hello world')
-eip712_structs.default_domain = my_domain
+my_domain = kuest_eip712_structs.make_domain(name='hello world')
+kuest_eip712_structs.default_domain = my_domain
 
 assert foo.to_message() == foo.to_message(my_domain)
 assert foo.signable_bytes() == foo.signable_bytes(my_domain)
@@ -112,7 +112,7 @@ assert foo.signable_bytes() == foo.signable_bytes(my_domain)
 EIP712's basic types map directly to solidity types.
 
 ```python
-from eip712_structs import Address, Boolean, Bytes, Int, String, Uint
+from kuest_eip712_structs import Address, Boolean, Bytes, Int, String, Uint
 
 Address()  # Solidity's 'address'
 Boolean()  # 'bool'
@@ -125,7 +125,7 @@ Uint(N)    # 'uintN' - N must be a multiple of 8, from 8 to 256
 
 Use like:
 ```python
-from eip712_structs import EIP712Struct, Address, Bytes
+from kuest_eip712_structs import EIP712Struct, Address, Bytes
 
 class Foo(EIP712Struct):
     member_name_0 = Address()
@@ -139,7 +139,7 @@ Usage is almost the same - the difference is you don't "instantiate" the class.
 
 Example:
 ```python
-from eip712_structs import EIP712Struct, String
+from kuest_eip712_structs import EIP712Struct, String
 
 class Dog(EIP712Struct):
     name = String()

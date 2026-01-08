@@ -4,7 +4,7 @@ with open("README.md", "r", encoding="utf-8") as fh:
     long_description = fh.read()
 
 setuptools.setup(
-    name="poly_eip712_structs",
+    name="kuest_eip712_structs",
     version="0.0.1",
     author="Kuest Engineering",
     author_email="engineering@kuest.com",
