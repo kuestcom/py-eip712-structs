@@ -6,14 +6,14 @@ with open("README.md", "r", encoding="utf-8") as fh:
 setuptools.setup(
     name="poly_eip712_structs",
     version="0.0.1",
-    author="Polymarket Engineering",
-    author_email="engineering@polymarket.com",
-    maintainer="Polymarket Engineering",
-    maintainer_email="engineering@polymarket.com",
+    author="Kuest Engineering",
+    author_email="support@kuest.com",
+    maintainer="Kuest Engineering",
+    maintainer_email="support@kuest.com",
     description="A python library for EIP712 objects",
     long_description=long_description,
     long_description_content_type="text/markdown",
-    url="https://github.com/Polymarket/poly-py-eip712-structs",
+    url="https://github.com/kuestcom/py-eip712-structs",
     install_requires=[
         "eth-utils>=4.1.1",
         "pycryptodome>=3.20.0",
@@ -25,7 +25,7 @@ setuptools.setup(
         ],
     },
     project_urls={
-        "Bug Tracker": "https://github.com/Polymarket/poly-py-eip712-structs",
+        "Bug Tracker": "https://github.com/kuestcom/py-eip712-structs",
     },
     classifiers=[
         "Programming Language :: Python :: 3",
