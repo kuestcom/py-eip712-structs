@@ -1,4 +1,4 @@
-# EIP-712 Structs  [![Build Status](https://travis-ci.org/ConsenSys/py-kuest-eip712-structs.svg?branch=master)](https://travis-ci.org/ConsenSys/py-kuest-eip712-structs) [![Coverage Status](https://coveralls.io/repos/github/ConsenSys/py-kuest-eip712-structs/badge.svg?branch=master)](https://coveralls.io/github/ConsenSys/py-kuest-eip712-structs?branch=master)
+# EIP-712 Structs [![PyPI](https://img.shields.io/pypi/v/kuest-py-eip712-structs.svg)](https://pypi.org/project/kuest-py-eip712-structs/) [![Python](https://img.shields.io/pypi/pyversions/kuest-py-eip712-structs.svg)](https://pypi.org/project/kuest-py-eip712-structs/) [![License](https://img.shields.io/github/license/kuestcom/py-eip712-structs.svg)](https://github.com/kuestcom/py-eip712-structs/blob/main/LICENSE)
 
 A python interface for simple EIP-712 struct construction.
 
@@ -9,12 +9,11 @@ Read the proposal:<br/>
 https://github.com/ethereum/EIPs/blob/master/EIPS/eip-712.md
 
 #### Supported Python Versions
-- `3.6`
-- `3.7`
+- `3.9.10+`
 
 ## Install
 ```bash
-pip install kuest-eip712-structs
+pip install kuest-py-eip712-structs
 ```
 
 ## Usage
