@@ -205,8 +205,8 @@ Run tests:
     - Cleanup containers when you're done: `docker-compose down`
 
 Deploying a new version:
-- Bump the version number in `setup.py`, commit it into master.
-- Make a release tag on the master branch in Github. Travis should handle the rest.
+- Bump the version number in `setup.py` and push the commit to `main`.
+- Publish a GitHub Release for that version. The GitHub Actions release workflow will run the tests, build the package, and publish it to PyPI.
 
 
 ## Shameless Plug
