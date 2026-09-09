@@ -5,7 +5,7 @@ with open("README.md", "r", encoding="utf-8") as fh:
 
 setuptools.setup(
     name="kuest-py-eip712-structs",
-    version="0.0.4",
+    version="0.0.5",
     author="Kuest Engineering",
     author_email="engineering@kuest.com",
     maintainer="Kuest Engineering",
@@ -15,8 +15,8 @@ setuptools.setup(
     long_description_content_type="text/markdown",
     url="https://github.com/kuestcom/py-eip712-structs",
     install_requires=[
-        "eth-utils>=4.1.1",
-        "pycryptodome>=3.20.0",
+        "eth-utils>=5.3.1",
+        "pycryptodome>=3.23.0",
         "pytest"
     ],
     package_data={
